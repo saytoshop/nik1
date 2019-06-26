@@ -6,12 +6,13 @@
   <meta charset="utf-8">
   <title>test</title>
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Spectral:400,500,700i&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <section class="top">
+  <section class="top" id="top">
     <div class="container">
       <div class="top__banner">
         <img src="img/bg.jpg" alt="">
@@ -36,7 +37,7 @@
           </div>
         </div>
         <div class="bannerCoverText">
-          <a href="" class="bannerCoverText__link">Посмотреть проекты</a>
+          <a href="#slider" class="bannerCoverText__link scroll">Посмотреть проекты</a>
           <div class="bannerCoverText__title">Группа компаний
           </div>
         </div>
@@ -71,7 +72,7 @@
     </div>
   </section>
 
-  <section class="data">
+  <section class="data" id="data">
     <div class="container">
       <div class="rows">
         <div class="data__title rows__row">
@@ -105,15 +106,15 @@
     </div>
     <div class="flyingBlock flyingBlock5">2</div>
   </section>
-  <section class="clients">
+  <section class="clients" id="clients">
     <div class="container">
       <div class="clients__text">
         Segment группа компаний основной задачей которой стоит реализация инвестиционых
         проектов в сфере строительстве и реновации обьектов недвижимости.
       </div>
-      <div class="clients__title">
+      <a href="#uslugi" class="clients__title scroll">
         Ключевые направления деятельности:
-      </div>
+      </a>
       <div class="clients__list">
         <div class="clients__client">Рекон</div>
         <div class="clients__client">Рекон СМК</div>
@@ -130,7 +131,7 @@
     </div>
   </section>
 
-  <section class="uslugi">
+  <section class="uslugi" id="uslugi">
     <div class="container">
       <div class="uslugi__header">
         Segment <strong>группа компаний</strong> основной задачей которой стоит реализация инвестиционых
@@ -229,7 +230,7 @@
     </div>
   </section>
 
-  <footer>
+  <footer id="footer">
     <div class="container">
       <div class="rows footerRows">
         <div class="rows__row footerContacts">
@@ -272,9 +273,9 @@
     Сегмент
   </div>
   <div class="flyingBlock flyingBlock4">
-    <a href="">contact me</a>
+    <a href="#footer" class="scroll">contact me</a>
     <span class="justLine"></span>
-    <a href="">about</a>
+    <a href="#footer" class="scroll">about</a>
 
     <div class="location">
       <p>moscow</p>
@@ -284,15 +285,29 @@
   <div class="flyingBlock flyingBlock6">
     <img src="img/bb.png" alt="">
   </div>
-  <div class="flyingBlock mobileMenu mobile">
+  <div class="flyingBlock mobileMenuToggle mobile">
     <a href="">Menu</a>
+  </div>
+
+  <div class="mobileMenu">
+    <a href="" class="mobileMenu__close"><img src="img/menu_close.png" alt=""></a>
+    <div class="mobileMenu__title">
+      Меню
+    </div>
+    <div class="mobileMenu__links">
+      <a href="#top" class="mobileMenu__link scroll">Основная задача</a>
+      <a href="#data" class="mobileMenu__link scroll">Основные показатели</a>
+      <a href="#clients" class="mobileMenu__link scroll">Структура</a>
+      <a href="#uslugi" class="mobileMenu__link scroll">Услуги</a>
+      <a href="#slider" class="mobileMenu__link scroll">Проекты</a>
+      <a href="#news" class="mobileMenu__link scroll">Новости</a>
+      <a href="#footer" class="mobileMenu__link scroll">Контакты</a>
+    </div>
   </div>
 </body>
 
 <script src="js/jquery-3.4.1.min.js"></script>
 <script src="js/script.js"></script>
-<link rel="stylesheet" href="css/owl.carousel.min.css">
-<link rel="stylesheet" href="css/owl.theme.default.min.css">
 <script src="js/owl.carousel.min.js"></script>
 
 </html>

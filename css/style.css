@@ -235,7 +235,7 @@ li::before {
 
 .rows__row {
   -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
+  flex-basis: 50%;
 }
 
 .data {
@@ -277,6 +277,8 @@ li::before {
   font-size: 17px;
   text-decoration: underline;
   margin-bottom: 130px;
+  display: block;
+  color: inherit;
 }
 
 .clients__list {
@@ -284,8 +286,8 @@ li::before {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .clients__client {
@@ -340,13 +342,13 @@ li::before {
 .bannerCover__transparent {
   width: 750px;
   -ms-flex-negative: 0;
-      flex-shrink: 0;
+  flex-shrink: 0;
 }
 
 .bannerCover__solid {
   background-color: #fff;
   -ms-flex-negative: 1;
-      flex-shrink: 1;
+  flex-shrink: 1;
   width: 750px;
 }
 
@@ -426,8 +428,8 @@ li::before {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   width: 718px;
   top: 390px;
   right: -220px;
@@ -465,7 +467,7 @@ li::before {
   display: none;
 }
 
-.mobileMenu {
+.mobileMenuToggle {
   top: 40px;
   right: 10px;
   -webkit-transform: rotate(90deg);
@@ -475,8 +477,49 @@ li::before {
   font-weight: 700;
 }
 
-.mobileMenu a {
+.mobileMenuToggle a {
   color: #000;
+}
+
+.mobileMenu {
+  display: none;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #efb300;
+  padding: 107px 45px 5%;
+}
+.mobileMenu.active{
+  display: block;
+}
+.mobileMenu__close{
+  position: absolute;
+  right: 60px;
+  top: 72px;
+}
+.mobileMenu__title{
+  font-size: 29px;
+  margin-bottom: 77px;
+}
+.mobileMenu__links{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 77px;
+  height: 80%;
+}
+.mobileMenu__link{
+  font-size: 48px;
+font-weight: 300;
+text-decoration: none;
+color: #000;
+
+}
+.mobileMenu__link:active,
+.mobileMenu__link:focus{
+  text-decoration: underline;
 }
 
 .drArrow {
@@ -545,8 +588,8 @@ li::before {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .collapsed .accordeon__title::after {
@@ -714,7 +757,7 @@ footer {
 
   .clients__list {
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
   }
 }
 
@@ -786,7 +829,7 @@ footer {
 
   .rows__row {
     -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
+    flex-basis: 100%;
   }
 
   .logo img {
@@ -821,8 +864,8 @@ footer {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
 
   .data__title {
@@ -877,8 +920,8 @@ footer {
   .uslugi .rows {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
 
   .uslugi .container {
@@ -1042,4 +1085,18 @@ footer {
   #news button.owl-next {
     right: -35px;
   }
+
+  .mobileMenu__link {
+    font-size: 28px;
+  }
+  .mobileMenu__close {
+    right: 30px;
+    top: 32px;
+}
+.mobileMenu__title {
+    margin-bottom: 37px;
+}
+.mobileMenu__links {
+    padding-left: 0;
+}
 }
